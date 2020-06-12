@@ -1,0 +1,15 @@
+﻿
+@using (Html.BeginForm("UploadFile", "Home", FormMethod.Post, new { enctype = "multipart/form-data" }))
+{
+
+    <div class="login-card">
+        <label>Email</label>
+        <input id="email-entry" name="EmailAddress" type="email" class="form-control" placeholder="Email Address" required /><br />
+        <label class="custom-file-upload">
+            <input id="file" name="file" type="file" required/>
+        </label>
+        <input id="submit-btn" type="submit" value="Upload" />
+    </div>
+
+
+} 

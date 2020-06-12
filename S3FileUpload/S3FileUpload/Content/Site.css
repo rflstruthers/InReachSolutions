@@ -1,0 +1,118 @@
+﻿body {
+    padding-top: 50px;
+    padding-bottom: 20px;
+    /*background-color: #fff;*/
+    background-color: #a8cee1;
+}
+
+/* Set padding to keep content from hitting the edges */
+.body-content {
+    padding-left: 15px;
+    padding-right: 15px;
+}
+
+/* Override the default bootstrap behavior where horizontal description lists 
+   will truncate terms that are too long to fit in the left column 
+*/
+.dl-horizontal dt {
+    white-space: normal;
+}
+
+/* Set width on the form input elements since they're 100% wide by default */
+input,
+select,
+textarea {
+    max-width: 280px;
+}
+
+.navbar {
+    background-color: #f6f8f8;
+    color: #3c7dcd;
+    height: 60px;
+}
+
+.navbar-brand {
+    margin-left: 20px;
+    margin-top: 6px;
+}
+
+a {
+    color: #3c7dcd;
+    font-size: 30px;
+    /*font-family: Arial, Helvetica, sans-serif;*/
+    font-weight: 700;
+    font-style: normal;
+    letter-spacing: .6px;
+    text-transform: uppercase;
+    text-decoration: none;
+}
+a:hover {
+    text-decoration: none;
+}
+
+.login-card {
+    /*border: 2px solid #3c7dcd;
+    border-radius: 4px;*/
+    margin: 100px auto;
+    width: 280px;
+    /*box-shadow: 0px 1px 1px rgba(0,0,0,.6);*/
+}
+
+#email-entry {
+    width: 280px;
+    height: 40px;
+    background-color: #f6f8f8;
+    border-radius: 4px;
+    color: #000;
+}
+
+label {
+    font-weight:500;
+}
+
+input[type="file"] {
+    /*display: none;*/
+}
+
+input#file {
+    padding: 0;
+}
+
+.custom-file-upload {
+    text-transform: uppercase;
+    font-size: 18px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+#submit-btn {
+    width: 280px;
+    height: 45px;
+    margin-top: 20px;
+    border: none;
+    border-radius: 4px;
+    background-color: #3c7dcd;
+    color: #ffffff;
+    text-transform: uppercase;
+    font-size: 18px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+    #submit-btn:hover {
+        background-color: #6293d0;
+    }
+
+.login-card.message {
+    width: 500px;
+}
+#message {
+    font-size: 18px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+
+.footer {
+    background-color: #f6f8f8;
+    padding: 20px;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+}
