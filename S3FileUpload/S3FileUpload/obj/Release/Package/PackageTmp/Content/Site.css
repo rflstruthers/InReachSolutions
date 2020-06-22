@@ -1,5 +1,4 @@
 ﻿body {
-    padding-top: 50px;
     padding-bottom: 20px;
     /*background-color: #fff;*/
     background-color: #a8cee1;
@@ -34,6 +33,7 @@ textarea {
 .navbar-brand {
     margin-left: 20px;
     margin-top: 6px;
+    margin-top: 0px;
 }
 
 a {

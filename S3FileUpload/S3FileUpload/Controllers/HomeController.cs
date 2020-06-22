@@ -8,6 +8,7 @@ using System.Configuration;
 using Amazon.S3.Model;
 using System.Net.Mail;
 using System.Net;
+using Amazon.S3.Transfer;
 
 namespace S3FileUpload.Controllers
 {
@@ -37,14 +38,17 @@ namespace S3FileUpload.Controllers
 
                 // upload file to S3
                 s3Client = new AmazonS3Client(bucketRegion);
+                var fileTransferUtility =
+                    new TransferUtility(s3Client);
                 PutObjectRequest putRequest = new PutObjectRequest
                 {
                     BucketName = bucketName,
-                    //Key = keyName,
+                    Key = _FileName,
                     FilePath = _path,
                     ContentType = "text/plain"
                 };
                 PutObjectResponse response = s3Client.PutObject(putRequest);
+                //fileTransferUtility.UploadAsync(_path, bucketName, _FileName);
 
                 // generate presigned URL for file
                 string urlString = "";

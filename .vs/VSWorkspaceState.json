@@ -4,7 +4,9 @@
     "\\S3FileUpload",
     "\\S3FileUpload\\S3FileUpload",
     "\\S3FileUpload\\S3FileUpload\\Controllers",
-    "\\S3FileUpload\\S3FileUpload\\UploadedFiles"
+    "\\S3FileUpload\\S3FileUpload\\UploadedFiles",
+    "\\S3FileUpload\\S3FileUpload\\Views",
+    "\\S3FileUpload\\S3FileUpload\\Views\\Home"
   ],
   "SelectedNode": "\\S3FileUpload\\S3FileUpload\\UploadedFiles",
   "PreviewInSolutionExplorer": false
