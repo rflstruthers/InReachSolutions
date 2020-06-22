@@ -1,0 +1,11 @@
+{
+  "ExpandedNodes": [
+    "",
+    "\\S3FileUpload",
+    "\\S3FileUpload\\S3FileUpload",
+    "\\S3FileUpload\\S3FileUpload\\Controllers",
+    "\\S3FileUpload\\S3FileUpload\\UploadedFiles"
+  ],
+  "SelectedNode": "\\S3FileUpload\\S3FileUpload\\UploadedFiles",
+  "PreviewInSolutionExplorer": false
+}
