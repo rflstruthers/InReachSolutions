@@ -33,7 +33,8 @@ namespace S3FileUpload.Controllers
             {
                 // upload file to app
                 string _FileName = Path.GetFileName(file.FileName);
-                string _path = Path.Combine(Server.MapPath("~/UploadedFiles"), _FileName);
+                // store the file inside ~/App_Data/uploads folder
+                string _path = Path.Combine(Server.MapPath("~/App_Data/uploads"), _FileName);
                 file.SaveAs(_path);
 
                 // upload file to S3
@@ -48,7 +49,6 @@ namespace S3FileUpload.Controllers
                     ContentType = "text/plain"
                 };
                 PutObjectResponse response = s3Client.PutObject(putRequest);
-                //fileTransferUtility.UploadAsync(_path, bucketName, _FileName);
 
                 // generate presigned URL for file
                 string urlString = "";
